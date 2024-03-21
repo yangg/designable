@@ -134,7 +134,7 @@ const App = () => {
                 use={['DESIGNABLE', 'JSONTREE', 'MARKUP', 'PREVIEW']}
               />
             </ToolbarPanel>
-            <ViewportPanel style={{ height: '100%' }}>
+            <ViewportPanel style={{ height: '100%', width: '280px' }}>
               <ViewPanel type="DESIGNABLE">
                 {() => (
                   <ComponentTreeWidget
