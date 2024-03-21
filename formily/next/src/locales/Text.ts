@@ -24,3 +24,22 @@ export const Text = {
     },
   },
 }
+
+export const Icon = {
+  'zh-CN': {
+    title: '图标',
+    settings: {
+      'x-component-props': {
+        type: '类型',
+      },
+    },
+  },
+  'en-US': {
+    title: 'Icon',
+    settings: {
+      'x-component-props': {
+        type: 'Type',
+      },
+    },
+  },
+}

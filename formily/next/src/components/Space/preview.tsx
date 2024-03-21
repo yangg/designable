@@ -34,3 +34,10 @@ Space.Resource = createResource({
     },
   ],
 })
+
+Space.defaultProps = {
+  style: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+}

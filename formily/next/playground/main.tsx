@@ -62,6 +62,7 @@ import {
   FormCollapse,
   FormLayout,
   FormGrid,
+  Icon,
 } from '../src'
 
 GlobalRegistry.registerDesignerLocales({
@@ -115,43 +116,8 @@ const App = () => {
       <StudioPanel logo={<LogoWidget />} actions={<ActionsWidget />}>
         <CompositePanel>
           <CompositePanel.Item title="panels.Component" icon="Component">
-            <ResourceWidget
-              title="sources.Inputs"
-              sources={[
-                Input,
-                Password,
-                NumberPicker,
-                Rating,
-                Range,
-                Select,
-                TreeSelect,
-                Cascader,
-                Transfer,
-                Checkbox,
-                Radio,
-                DatePicker,
-                TimePicker,
-                Upload,
-                Switch,
-                ObjectContainer,
-              ]}
-            />
-            <ResourceWidget
-              title="sources.Layouts"
-              sources={[
-                Card,
-                FormGrid,
-                FormTab,
-                FormLayout,
-                FormCollapse,
-                Space,
-              ]}
-            />
-            <ResourceWidget
-              title="sources.Arrays"
-              sources={[ArrayCards, ArrayTable]}
-            />
-            <ResourceWidget title="sources.Displays" sources={[Text]} />
+            <ResourceWidget title="sources.Displays" sources={[Text, Icon]} />
+            <ResourceWidget title="sources.Layouts" sources={[Space]} />
           </CompositePanel.Item>
           <CompositePanel.Item title="panels.OutlinedTree" icon="Outline">
             <OutlineTreeWidget />
@@ -191,6 +157,7 @@ const App = () => {
                       Upload,
                       Switch,
                       Text,
+                      Icon,
                       Card,
                       ArrayCards,
                       ArrayTable,
